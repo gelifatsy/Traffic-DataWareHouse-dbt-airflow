@@ -15,6 +15,7 @@ __pycache__/
 /airflow_docker/logs
 
 # Distribution / packaging
+*.csv
 .Python
 build/
 develop-eggs/
