@@ -84,12 +84,12 @@ class ELT:
 #          './data')
 # elt.extract_data()
 
-# elt = ELT('./data/20181024_d1_0830_0900.csv',
-#          "C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/")
-
-elt = ELT('C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/data/20181024_d1_0830_0900.csv',
+elt = ELT('./data/20181024_d1_0830_0900.csv',
          "C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/")
-elt.extract_data()
+
+# elt = ELT('C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/data/20181024_d1_0830_0900.csv',
+#          "C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/")
+# elt.extract_data()
 
 # elt.load_vehicle_data()
 # elt.load_trajectory_data()

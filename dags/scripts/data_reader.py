@@ -115,6 +115,7 @@ class DataReader:
 
 if __name__ == "__main__":
     
-    #DataReader(file_path='C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/data/20181024_d1_0830_0900.csv').get_dfs(v=1)
-    DataReader(file_path='././data/20181024_d1_0830_0900.csv').get_dfs(v=1)
-    # DataReader(file_path= f"././data/20181024_d1_0830_0900.csv").get_dfs(v=1)
+    # DataReader(file_path='C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/data/20181024_d1_0830_0900.csv').get_dfs(v=1)
+    DataReader(file_path="./data/20181024_d1_0830_0900.csv").get_dfs(v=1)
+    # DataReader(file_path='././data/20181024_d1_0830_0900.csv').get_dfs(v=1)
+    # # DataReader(file_path= f"././data/20181024_d1_0830_0900.csv").get_dfs(v=1)

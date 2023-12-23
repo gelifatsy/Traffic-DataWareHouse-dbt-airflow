@@ -47,15 +47,8 @@ dag_path = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(dag_path, 'data')
 file_path = os.path.join(data_dir, '20181024_d1_0830_0900.csv')
 
-# Now use file_path in your DAG script
-
-# elt = ELT('/data/20181024_d1_0830_0900.csv',
-#          "/data20181024_d1_0830_0900.csv")
-
-# elt = ELT('./data/20181024_d1_0830_0900.csv',
-#          './data')
-# elt = ELT(read_dag_path=f"{dag_path }/data/20181024_d1_0830_0900.csv",
-#          save_dag_path=f"{dag_path }/data/processed_data/")
+elt = ELT('./data/20181024_d1_0830_0900.csv',
+         "C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/")
 #########################################################################
 
 

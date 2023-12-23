@@ -118,5 +118,6 @@ if __name__ == "__main__":
     #DataReader(file_path='C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/data/20181024_d1_0830_0900.csv').get_dfs(v=1)
     #DataReader(file_path='/data/20181024_d1_0830_0900.csv').get_dfs(v=1)
     # DataReader(file_path= f"././data/20181024_d1_0830_0900.csv").get_dfs(v=1)
-    data_dir = os.path.join(os.path.dirname(__file__), 'data')
-    file_path = os.path.join(data_dir, '20181024_d1_0830_0900.csv')
+    # data_dir = os.path.join(os.path.dirname(__file__), 'data')
+    # file_path = os.path.join(data_dir, '20181024_d1_0830_0900.csv')
+    DataReader(file_path="./data/20181024_d1_0830_0900.csv").get_dfs(v=1)
