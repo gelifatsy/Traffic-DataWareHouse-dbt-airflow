@@ -12,11 +12,12 @@ import os
 dag_path = os.getcwd()
 print(dag_path)
 # Class definition for Extract, Load, Transform (ELT)
-TRAJECTORY_SCHEMA = os.path.join(
-    dag_path, "scripts/trajectory_schema.sql")
+# TRAJECTORY_SCHEMA = os.path.join(
+#     dag_path, "scripts/trajectory_schema.sql")
+# VEHICLE_SCHEMA = os.path.join(dag_path, "scripts/vehicle_schema.sql")
+
+TRAJECTORY_SCHEMA = os.path.join(dag_path, "scripts/trajectory_schema.sql")
 VEHICLE_SCHEMA = os.path.join(dag_path, "scripts/vehicle_schema.sql")
-
-
 # TRAJECTORY_SCHEMA = "trajectory_schema.sql"
 # VEHICLE_SCHEMA = "vehicle_schema.sql"
 
@@ -80,16 +81,17 @@ class ELT:
         return (date - epoch).total_seconds() * 1000.0
 
 
-# elt = ELT('./data/20181024_d1_0830_0900.csv',
-#          './data')
-# elt.extract_data()
 
-elt = ELT('./data/20181024_d1_0830_0900.csv',
-         "C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/")
 
-# elt = ELT('C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/data/20181024_d1_0830_0900.csv',
-#          "C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/")
-# elt.extract_data()
 
-# elt.load_vehicle_data()
+
+# elt = ELT('./data/20181029_d1_0900_0930.csv',
+#          './data/extracted_file')
+
+
+
+
+# # # elt.extract_data()
+
+# # elt.load_vehicle_data()
 # elt.load_trajectory_data()
