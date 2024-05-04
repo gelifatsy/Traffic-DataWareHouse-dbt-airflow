@@ -12,14 +12,17 @@ from sqlalchemy import inspect
 # load_dotenv(dotenv_path)
 
 # Connect to your PostgreSQL database on a remote server
-HOST = "localhost"
-PORT = "5432"
-USER = "postgres"
-PASS = "lawofatt7"
-DB = "Traffic_DWH"
+HOST = "postgres"
+PORT = "5433"
+USER = "airflow"
+PASS = "airflow"
+DB = "airflow"
 
 # Construct a SQLAlchemy connection string
-CONNECTION_STR = f"postgresql+psycopg2://{USER}:{PASS}@{HOST}:{PORT}/{DB}"
+# CONNECTION_STR = f"postgresql+psycopg2://{USER}:{PASS}@{HOST}:{PORT}/{DB}"
+CONNECTION_STR = f"postgresql+psycopg2://airflow:airflow@postgres/airflow"
+BANNER = "="*20
+
 
 # Create a SQLAlchemy engine
 ENGINE = create_engine(CONNECTION_STR)

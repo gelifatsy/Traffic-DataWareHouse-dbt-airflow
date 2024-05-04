@@ -45,10 +45,10 @@ import os
 
 dag_path = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(dag_path, 'data')
-file_path = os.path.join(data_dir, '20181024_d1_0830_0900.csv')
+file_path = os.path.join(data_dir, '20181029_d1_0900_0930.csv')
 
-elt = ELT('./data/20181024_d1_0830_0900.csv',
-         "C:/Users/hp/Documents/10 Academy/week 1/Traffic DWH-ELT/")
+elt = ELT('./data/20181029_d1_0900_0930.csv',
+         './data/extracted_file/')
 #########################################################################
 
 
